@@ -47,7 +47,7 @@ function downloadCalendarFile() {
         'BEGIN:VEVENT',
         'DTSTART:20260829',
         'DTEND:20260830',
-        'SUMMARY:Hochzeit von Maria & Lukas',
+        'SUMMARY:Hochzeit von Linda & Silvan',
         'DESCRIPTION:Wir freuen uns auf euch!',
         'LOCATION:Gutshof Sonnenschein, Dorfstraße 1, 12345 Musterstadt',
         'END:VEVENT',
@@ -57,7 +57,7 @@ function downloadCalendarFile() {
     const blob = new Blob([calendarData], { type: 'text/calendar;charset=utf-8' });
     const link = document.createElement('a');
     link.href = window.URL.createObjectURL(blob);
-    link.setAttribute('download', 'hochzeit_maria_lukas.ics');
+    link.setAttribute('download', 'hochzeit_linda_silvan.ics');
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
