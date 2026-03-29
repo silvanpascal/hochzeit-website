@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsere Hochzeit | Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
 
+    <div id="password-gate" class="overlay">
+        <div class="login-card">
+            <span class="boho-icon">🌿</span>
+            <h1>Herzlich Willkommen</h1>
+            <p>Bitte gib das Passwort aus eurer Einladung ein:</p>
+            <input type="password" id="password-input" placeholder="Passwort...">
+            <button onclick="checkPassword()">Eintreten</button>
+            <p id="error-msg" style="color: #bc8f8f; display: none; margin-top: 10px;">Hoops! Das Passwort ist leider nicht korrekt.</p>
+        </div>
+    </div>
+
+    <main id="main-content" style="display: none;">
+        <nav>
+            <div class="logo">M & L</div>
+        </nav>
+        <header class="hero">
+            <h1>Maria & Lukas</h1>
+            <p class="date">12. September 2026</p>
+            <hr class="divider">
+            <p>Wir freuen uns auf euch!</p>
+        </header>
+        </main>
+
+    <script>
+        function checkPassword() {
+            const pw = document.getElementById('password-input').value;
+            // Ersetze 'hochzeit2026' durch dein Wunsch-Passwort
+            if (pw.toLowerCase() === 'liebe') { 
+                document.getElementById('password-gate').style.display = 'none';
+                document.getElementById('main-content').style.display = 'block';
+            } else {
+                document.getElementById('error-msg').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
