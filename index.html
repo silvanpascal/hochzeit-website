@@ -30,6 +30,48 @@
             <hr class="divider">
             <p>Wir freuen uns auf euch!</p>
         </header>
+        <section id="rsvp" class="info-section">
+    <span class="boho-icon">💌</span>
+    <h2>Anmeldung</h2>
+    <p>Wir freuen uns auf eure Rückmeldung bis zum 01. Juli 2026.</p>
+    
+    <form action="https://formspree.io/f/DEINE_ID" method="POST" class="rsvp-form">
+        <div class="form-group">
+            <label for="name">Name(n)</label>
+            <input type="text" id="name" name="name" placeholder="Vor- und Nachname" required>
+        </div>
+
+        <div class="form-group">
+            <label for="status">Könnt ihr kommen?</label>
+            <select id="status" name="status" required>
+                <option value="zusage">Ja, wir sind dabei!</option>
+                <option value="absage">Leider nein.</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="guests">Anzahl der Personen (inkl. Kinder)</label>
+            <input type="number" id="guests" name="guests" min="1" max="10" value="1">
+        </div>
+
+        <div class="form-group">
+            <label for="food">Besondere Ernährung / Allergien</label>
+            <textarea id="food" name="food" placeholder="Vegetarisch, Vegan, Glutenfrei..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Benötigt ihr den Shuttle-Service?</label>
+            <div class="radio-group">
+                <input type="radio" id="shuttle-yes" name="shuttle" value="ja">
+                <label for="shuttle-yes">Ja</label>
+                <input type="radio" id="shuttle-no" name="shuttle" value="nein" checked>
+                <label for="shuttle-no">Nein</label>
+            </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Abschicken</button>
+    </form>
+</section>
         </main>
 
     <script>
