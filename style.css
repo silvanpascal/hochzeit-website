@@ -1,1 +1,83 @@
+:root {
+    --bg-color: #fdfaf5; /* Cremiges Off-White */
+    --text-color: #5d534a; /* Sanftes Dunkelbraun */
+    --accent-color: #d4a373; /* Sanftes Gold/Ocker */
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Lato', sans-serif;
+}
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-sans);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.overlay {
+    text-align: center;
+    padding: 20px;
+}
+
+.login-card {
+    background: white;
+    padding: 40px;
+    border-radius: 2px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+h1 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.boho-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+    opacity: 0.6;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    width: 200px;
+    font-family: inherit;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+button {
+    background: var(--text-color);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-family: var(--font-serif);
+    transition: 0.3s;
+}
+
+button:hover {
+    background: var(--accent-color);
+}
+
+/* Hero Section Style */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.divider {
+    width: 50px;
+    border: 0;
+    border-top: 1px solid var(--accent-color);
+    margin: 20px auto;
+}
